@@ -21,7 +21,7 @@ import com.squareup.moshi.JsonClass
 data class TransactionActionTrace(
     val receipt: TransactionReceipt,
     val act: TransactionAct,
-    val elapsed: Int,
+    val elapsed: Int? = null,
     val console: String? = null,
     val trx_id: String
 )
